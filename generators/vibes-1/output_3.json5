@@ -1,0 +1,20 @@
+{
+    op: 'sequence',
+    children: [
+        {
+            op: 'literal',
+            value: 'Thingy573%',
+        },
+        {
+            op: 'rand',
+            chars: '!@#$123',
+            min: 2,
+            max: 7,
+        },
+        {
+            op: 'literal',
+            value: ',./;\'',
+        },
+    ]
+}
+
