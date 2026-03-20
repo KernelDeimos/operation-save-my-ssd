@@ -1,0 +1,20 @@
+{
+  "name": "saving-my-ssd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "start": "node src/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "json5": "^2.2.3"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.0"
+  }
+}

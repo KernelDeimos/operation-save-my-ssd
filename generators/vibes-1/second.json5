@@ -1,0 +1,97 @@
+{
+    op: 'sequence',
+    children: [
+        {
+            op: 'literal',
+            value: 'Thingy',
+        },
+        {
+            op: 'or',
+            choices: [
+                {
+                    op: 'rand',
+                    chars: '!@#123%',
+                    min: 1,
+                    max: 3,
+                },
+                {
+                    op: 'nothing'
+                },
+            ]
+        },
+        {
+            op: 'optional',
+            delegate: {
+                op: 'or',
+                choices: [
+                    {
+                        op: 'literal',
+                        value: '753',
+                    },
+                    {
+                        op: 'literal',
+                        value: '564',
+                    },
+                    {
+                        op: 'literal',
+                        value: '675',
+                    },
+                    {
+                        op: 'literal',
+                        value: '573',
+                    }
+                ]
+            }
+        },
+        {
+            op: 'or',
+            choices: [
+                {
+                    op: 'rand',
+                    chars: '!@#%$',
+                    min: 1,
+                    max: 5,
+                },
+
+                {
+                    op: 'rand',
+                    chars: '!@#%$123',
+                    min: 1,
+                    max: 5,
+                },
+                {
+                    op: 'nothing'
+                },
+            ]
+        },
+        {
+            op: 'optional',
+            delegate: {
+                op: 'or',
+                choices: [
+                    {
+                        op: 'literal',
+                        value: '753',
+                    },
+                    {
+                        op: 'literal',
+                        value: '564',
+                    },
+                    {
+                        op: 'literal',
+                        value: '675',
+                    },
+                    {
+                        op: 'literal',
+                        value: '573',
+                    }
+                ]
+            }
+        },
+        {
+            op: 'literal',
+            value: ',./;\'',
+        },
+    ]
+}
+
